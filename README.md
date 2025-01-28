@@ -10,7 +10,6 @@ This script helps you create a config file and add a new peer into your server c
 #> cd /etc/wireguard 
 ```
 2. Download the script
-
 ```
 #> wget https://raw.githubusercontent.com/AGTYMC/bash.wgcreate/refs/heads/master/wgcreatepeer.sh
 ```
