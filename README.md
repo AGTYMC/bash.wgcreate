@@ -37,6 +37,7 @@ Create config file for the [my-new-client] client
 ```
 All files inserted into the "my-new-client" folder.
 ```
+#> ls -lah my-new-client
 -rw------- 1 root root   45 Jan 28 11:17 client_my-new-client_private.key
 -rw------- 1 root root   45 Jan 28 11:17 client_my-new-client_public.key
 -rw------- 1 root root  244 Jan 28 11:17 my-new-client.conf
@@ -45,6 +46,7 @@ All files inserted into the "my-new-client" folder.
 There are keys client_my-new-client_private.key and client_my-new-client_public.key. 
 Into my-new-client.conf set configuration for a client machine.
 ```
+#> cat my-new-client/my-new-client.conf
 [Interface]
 PrivateKey = MMh7CeAkgfC/AjMPALbPAAEMyvhTr061GBbW36fPZnU=
 Address = 10.10.20.10/32
