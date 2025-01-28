@@ -24,6 +24,8 @@ wg genkey | tee ${PRIVATE_KEY_FILE} | wg pubkey > ${PUBLIC_KEY_FILE}
 PRIVATE_KEY=`cat ${PRIVATE_KEY_FILE}`
 PUBLICK_KEY=`cat ${PUBLIC_KEY_FILE}`
 
+echo ""
+
 echo "Insert new peer into ${configFile}.conf"
 echo "" >> ${configFile}.conf
 echo "#${clientName}" >> ${configFile}.conf
@@ -44,9 +46,9 @@ echo "PersistentKeepalive = ${SERVER_KEEPALIVE}" >> ${clientName}/${clientName}.
 
 chmod 600 ${clientName}/*
 
-echo "DONE"
+echo -e "\nDONE\n"
 echo "Restart WG-server if all right"
-echo "systemctl restart wg-quick@${configFile}"
-echo "OR"
-echo "wg-quick down ${configFile} && wg-quick up ${configFile}"
+echo -e "\t systemctl restart wg-quick@${configFile}"
+echo -e "\t\t OR"
+echo -e "\t wg-quick down ${configFile} && wg-quick up ${configFile}"
 echo ""
