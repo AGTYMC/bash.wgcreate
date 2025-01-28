@@ -20,9 +20,9 @@ This script helps you create a config file and add a new peer into your server c
 #> chmod 700 wgcreatepeer.sh
 ```
 
-4. Add PublicKey, Endpoint, AllowedIps and PersistentKeepalive into wgcreate.sh
+4. Add PublicKey, Endpoint, AllowedIps and PersistentKeepalive into wgcreatepeer.sh
 ```
-#> nano wgcreate.sh
+#> nano wgcreatepeer.sh
 SERVER_PUBLIC_KEY=your_server_public_key
 SERVER_ENDPOINT=your_server_and_port (182.201.26.45:21800)
 SERVER_ALLOWED_IPS=allowed_ips (10.10.20.0/24, 0.0.0.0:/0)
@@ -30,7 +30,7 @@ SERVER_KEEPALIVE=in_seconds (20)
 ```
 5. Run the script
 ```
-#> ./wgcreate.sh
+#> ./wgcreatepeer.sh
 Server's config file (wg0, without '.conf'): wg0
 Client name (new-client): my-new-client
 Allowed IPs (10.10.20.101/32): 10.10.20.10/32
