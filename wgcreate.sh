@@ -5,7 +5,7 @@ SERVER_ENDPOINT=
 SERVER_ALLOWED_IPS=
 SERVER_KEEPALIVE=
 
-echo -n "Configfile (wg0, without '.conf'): "
+echo -n "Server's config file (wg0, without '.conf'): "
 read -r configFile
 
 echo -n "Client name (new-client): "

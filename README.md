@@ -29,7 +29,7 @@ SERVER_KEEPALIVE=in_seconds (20)
 5. Run the script
 ```
 #> ./wgcreate.sh
-Configfile (wg0, without '.conf'): wg0
+Server's config file (wg0, without '.conf'): wg0
 Client name (new-client): my-new-client
 Allowed IPs (10.10.20.101/32): 10.10.20.10/32
 Insert new peer into wg0.conf
