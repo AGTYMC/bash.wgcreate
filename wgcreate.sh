@@ -48,7 +48,7 @@ chmod 600 ${clientName}/*
 
 echo -e "\nDONE\n"
 echo "Restart WG-server if all right"
-echo -e "\t systemctl restart wg-quick@${configFile}"
-echo -e "\t\t OR"
+echo -e "\n\t systemctl restart wg-quick@${configFile}"
+echo -e "\t OR"
 echo -e "\t wg-quick down ${configFile} && wg-quick up ${configFile}"
 echo ""
