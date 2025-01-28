@@ -1,7 +1,9 @@
 # WG create v.1.0.4
 This script helps you create a config file and add a new peer into your server config file.
 
-## How to do
+## Create New Peer
+
+### How to do
 1. Login as root and enter into wireguard directory. Like as:
 ```
 #> sudo su
@@ -79,7 +81,5 @@ AllowedIPs = 10.10.20.10/32
 OR
 #> wg-quick down wg0 && wg-quick up wg0
 ```
-## In the end
+### In the end
 After all, copy the client config file into the client machine and add into WG-client program
-
-### DONE
