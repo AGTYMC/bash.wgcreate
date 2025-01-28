@@ -25,7 +25,7 @@ This script helps you create a config file and add a new peer into your server c
 #> nano wgcreatepeer.sh
 SERVER_PUBLIC_KEY=your_server_public_key
 SERVER_ENDPOINT=your_server_and_port (182.201.26.45:21800)
-SERVER_ALLOWED_IPS=allowed_ips (10.10.20.0/24, 0.0.0.0:/0)
+SERVER_ALLOWED_IPS=allowed_ips (10.10.20.0/24, 0.0.0.0/0)
 SERVER_KEEPALIVE=in_seconds (20)
 ```
 5. Run the script
@@ -56,7 +56,7 @@ Address = 10.10.20.10/32
 [Peer]
 PublicKey = your_server_public_key
 Endpoint = 182.201.26.45:21800
-AllowedIPs = 10.10.30.0/24, 0.0.0.0:/0
+AllowedIPs = 10.10.30.0/24, 0.0.0.0/0
 PersistentKeepalive = 20
 ```
 At last into wg0.conf added new strings for the peer.
