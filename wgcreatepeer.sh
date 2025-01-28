@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+############################################
+# Author: Agarty M.C.                     ##
+# https://github.com/AGTYMC/bash.wgcreate ##
+############################################
+
 SERVER_PUBLIC_KEY=
 SERVER_ENDPOINT=
 SERVER_ALLOWED_IPS=
