@@ -44,7 +44,7 @@ echo "Endpoint = ${SERVER_ENDPOINT}" >> ${clientName}/${clientName}.conf
 echo "AllowedIPs = ${SERVER_ALLOWED_IPS}" >> ${clientName}/${clientName}.conf
 echo "PersistentKeepalive = ${SERVER_KEEPALIVE}" >> ${clientName}/${clientName}.conf
 
-chmod 600 ${clientName}/*
+chmod -R 600 ${clientName}
 
 echo -e "\nDONE\n"
 echo "Restart WG-server if all right"
