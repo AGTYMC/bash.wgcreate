@@ -1,4 +1,4 @@
-# WG create v.1.0.1
+# WG create v.1.0.3
 This script helps you create a config file and add a new peer into your server config file.
 
 ## How to do
@@ -73,10 +73,9 @@ AllowedIPs = 10.10.20.10/32
 
 6. Restart WG
 ```
-#> systemctl start wg-quick@wg0
+#> systemctl restart wg-quick@wg0
 OR
-#> wg-quick down wg0
-#> wg-quick up wg0
+#> wg-quick down wg0 && wg-quick up wg0
 ```
 ## In the end
 After all, copy the client config file into the client machine and add into WG-client program

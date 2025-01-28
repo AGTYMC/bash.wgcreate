@@ -43,3 +43,10 @@ echo "AllowedIPs = ${SERVER_ALLOWED_IPS}" >> ${clientName}/${clientName}.conf
 echo "PersistentKeepalive = ${SERVER_KEEPALIVE}" >> ${clientName}/${clientName}.conf
 
 chmod 600 ${clientName}/*
+
+echo "DONE"
+echo "Restart WG-server if all right"
+echo "systemctl restart wg-quick@${configFile}"
+echo "OR"
+echo "wg-quick down ${configFile} && wg-quick up ${configFile}"
+echo ""
