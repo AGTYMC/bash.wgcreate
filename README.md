@@ -1,4 +1,4 @@
-# WG create
+# WG create v.1.0.1
 This script helps you create a config file and add a new peer into your server config file.
 
 ## How to do
