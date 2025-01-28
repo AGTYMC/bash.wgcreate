@@ -17,7 +17,7 @@ This script helps you create a config file and add a new peer into your server c
 
 3. Change permissions and mods
 ```
-#> chmod 700 wgcreate.sh
+#> chmod 700 wgcreatepeer.sh
 ```
 
 4. Add PublicKey, Endpoint, AllowedIps and PersistentKeepalive into wgcreate.sh
