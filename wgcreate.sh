@@ -26,14 +26,14 @@ PUBLICK_KEY=`cat ${PUBLIC_KEY_FILE}`
 
 echo ""
 
-echo "Insert new peer into ${configFile}.conf"
+echo "Insert the new peer into ${configFile}.conf"
 echo "" >> ${configFile}.conf
 echo "#${clientName}" >> ${configFile}.conf
 echo "[Peer]" >> ${configFile}.conf
 echo "PublicKey = ${PUBLICK_KEY}" >> ${configFile}.conf
 echo "AllowedIPs = ${allowedIps}" >> ${configFile}.conf
 
-echo "Create config file for the [${clientName}] client"
+echo "Create the config file for the [${clientName}] client"
 echo "[Interface]" > ${clientName}/${clientName}.conf
 echo "PrivateKey = ${PRIVATE_KEY}" >> ${clientName}/${clientName}.conf
 echo "Address = ${allowedIps}" >> ${clientName}/${clientName}.conf
